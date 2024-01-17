@@ -11,13 +11,17 @@
 <body>
     <div class="flex flex-col min-h-screen bg-lime-800 min-w-screen">
         <header class="flex flex-col justify-center items-center h-[200px]  bg-[url('../images/istockphoto-1318037007-612x612.jpg')] bg-no-repeat bg-cover bg-center">
-            <nav class="flex h-[50%] w-11/12 justify-center items-center text-white gap-4 text-lg font-medium md:justify-end">
+            <div class="p-3 flex items-center gap-2 md:self-start">
+                <img class="w-[60px] " src="../images/klipartz.com.png" alt="logo_mascotas">
+                <h1 class="text-white text-4xl">Nombre</h1>
+            </div>
+            <nav class="flex h-[50%] w-11/12 justify-center items-start text-white gap-4 text-lg font-medium md:justify-end">
                 <a href="#">Inicio</a>
                 <a class="underline" href="#">Farmacia</a>
                 <a href="./juguetes.html">Juguetes</a>
                 <a href="#">Contacto</a>
             </nav>
-            <h2 class="text-5xl text-center text-white">Farmacia</h2>
+            <h2 class="text-3xl text-center text-white">Farmacia</h2>
             <button class="self-end ">
                 <i id="carrito" class="p-2 text-black text-xl fa-solid fa-cart-shopping ">
                     <div id="mostrarCarrito" class="w-[350px] h-[300px] bg-white absolute right-[10px] p-2 flex flex-col gap-1 z-10 hidden overflow-y-scroll">
@@ -29,7 +33,7 @@
             <div class="flex flex-col items-center gap-2">
             </div>
             <section class="flex flex-col items-center gap-4 pb-3">
-                <h3 class="text-center mt-4 text-4xl">Productos</h3>
+                <h3 class="text-center mt-4 text-3xl">Productos</h3>
                 <label class="text-lg flex flex-col">Buscar: 
                     <input class="rounded-lg p-1 w-[300px]" type="text" id="busquedaPorProducto" placeholder="Cepillo">
                 </label>
