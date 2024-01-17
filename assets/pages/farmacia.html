@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Farmacia y Juguetes</title>
+    <title>Farmacia</title>
 </head>
 <body>
-    <header class="h-[100px]">
+    <div class="flex flex-col min-h-screen bg-lime-800">
+        <header class="h-[100px]">
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Farmacia</a>
+                <a href="./juguetes.html">Juguetes</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <main>
+            <div class="flex flex-col items-center gap-2">
+                <h2 class="text-5xl">Farmacia</h2>
+                <img class="h-[300px] w-[90%] object-cover rounded-xl" src="../images/istockphoto-1318037007-612x612.jpg" alt="banner_remedios_mascotas">
+            </div>
+            <section class="flex flex-col items-center gap-4 pb-3">
+                <h3 class="text-center mt-4 text-4xl">Productos</h3>
+                <label class="text-lg">Buscar: 
+                    <input class="rounded-lg p-1 w-[300px]" type="text" id="busquedaPorProducto" placeholder="Cepillo">
+                </label>
+            </section>
+            <div id="farmacia" class="flex flex-wrap justify-center pt-4 gap-4">
 
-    </header>
-    <main>
-    </main>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script type="module" src="../script/farmacia.js"></script>
 </body>
 </html>
