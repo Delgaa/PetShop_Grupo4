@@ -11,7 +11,9 @@ export function pintarTarjetas(arrArticulos, elemento, carrito_p) {
         if (article.dataset.disponibles == 0) {
             article.firstElementChild.textContent = '¡Sin Stock!'
             article.lastElementChild.lastElementChild.innerHTML =''
+
             article.lastElementChild.previousElementSibling.firstElementChild.firstElementChild.classList.replace('text-green-300', 'text-white')
+
         }else if (article.dataset.disponibles < 5) {
             article.firstElementChild.textContent = '¡Ultimas unidades!'
         }
