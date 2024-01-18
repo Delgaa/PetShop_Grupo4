@@ -8,42 +8,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Farmacia</title>
 </head>
-<body>
-    <div class="flex flex-col min-h-screen bg-lime-800 min-w-screen">
-        <header class="flex flex-col justify-center items-center h-[200px]  bg-[url('../images/istockphoto-1318037007-612x612.jpg')] bg-no-repeat bg-cover bg-center">
-            <div class="p-3 flex items-center gap-2 md:self-start">
-                <img class="w-[60px] " src="../images/klipartz.com.png" alt="logo_mascotas">
-                <h1 class="text-white text-4xl">Nombre</h1>
+<body >
+    <div class="flex flex-col items-center min-h-screen bg-[#E99224] ">
+        <header class="flex flex-col w-full justify-center items-center h-[200px]  bg-[url('../images/istockphoto-1318037007-612x612.jpg')] bg-no-repeat bg-cover bg-center">
+            <div class="p-3 flex flex-col items-center gap-2 md:self-start md:flex-wrap md:justify-between md:w-[90%] md:px-20 ">
+                <div class="flex gap-2">
+                    <img class="w-[60px] " src="../images/klipartz.com.png" alt="logo_mascotas">
+                    <h1 class="text-white text-4xl italic"><span class="text-[#E99224]">Pet</span>Shop</h1>
+                </div>
+                <nav class="flex h-[50%] w-11/12 justify-center items-start text-white gap-3 text-lg font-medium md:justify-end md:px-20">
+                    <a class="text-xl text-white font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow" href="../../index.html">Inicio</a>
+                    <a class="text-xl text-[#E99224] font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow" class="underline" href="#">Farmacia</a>
+                    <a class="text-xl text-white font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow" href="./juguetes.html">Juguetes</a>
+                    <a class="text-xl text-white font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow" href="./contacto.html">Contacto</a>
+                </nav>
             </div>
-            <nav class="flex h-[50%] w-11/12 justify-center items-start text-white gap-4 text-lg font-medium md:justify-end">
-                <a href="#">Inicio</a>
-                <a class="underline" href="#">Farmacia</a>
-                <a href="./juguetes.html">Juguetes</a>
-                <a href="#">Contacto</a>
-            </nav>
-            <h2 class="text-3xl text-center text-white">Farmacia</h2>
+            <h2 class="text-5xl text-center text-white font-bold">Farmacia</h2>
             <button class="self-end rounded-lg">
-                <i id="carrito" class="p-2 mr-3 text-black text-xl fa-solid fa-cart-shopping ">
-                    <div id="mostrarCarrito" class="w-[350px] h-[300px] rounded-lg bg-slate-300 absolute right-[10px] p-2 flex flex-col gap-1 z-10 hidden overflow-y-scroll">
+                <i id="carrito" class="p-2 mr-3 text-black text-xl fa-solid fa-cart-shopping bg-white rounded-full">
+                    <div id="mostrarCarrito" class="w-[350px] h-[300px] rounded-lg bg-white mt-6 absolute right-[10px] p-2 flex flex-col gap-1 z-10 hidden overflow-y-scroll">
                     </div>
                 </i>
             </button>
         </header>
-        <main class="pb-6">
+        <main class="pb-6 flex flex-col">
             <div class="flex flex-col items-center gap-2">
             </div>
             <section class="flex flex-col items-center gap-4 pb-3">
-                <h3 class="text-center mt-4 text-3xl">Productos</h3>
-                <label class="text-lg flex flex-col">Buscar: 
-                    <input class="rounded-lg p-1 w-[300px]" type="text" id="busquedaPorProducto" placeholder="Cepillo">
+                <h3 class="text-center mt-4 font-bold text-3xl">Productos</h3>
+                <label>
+                    <input class="rounded-lg p-1 w-[300px]" type="text" id="busquedaPorProducto" placeholder="Busca un producto">
                 </label>
             </section>
             <div id="farmacia" class="flex flex-wrap justify-center pt-4 gap-4">
 
             </div>
         </main>
-        <footer class=" border-t-2 mt-auto bg-red-900 ">
-            <p class="text-center text-xl py-1">Grupo 4 - MindHub - Cohort N 53</p>
+        <footer class=" border-t-2 mt-auto bg-black  min-w-full">
+            <p class="text-center text-xl text-white py-1">Grupo 4 - MindHub - Cohort N 53</p>
         </footer>
     </div>
     <script type="module" src="../script/farmacia.js"></script>
