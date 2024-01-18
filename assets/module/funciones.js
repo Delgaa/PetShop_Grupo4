@@ -11,7 +11,9 @@ export function pintarTarjetas(arrArticulos, elemento, carrito_p) {
         if (article.dataset.disponibles == 0) {
             article.firstElementChild.textContent = '¡Sin Stock!'
             article.lastElementChild.lastElementChild.innerHTML =''
-            article.lastElementChild.previousElementSibling.firstElementChild.firstElementChild.classList.replace('text-green-600', 'text-red-500')
+
+            article.lastElementChild.previousElementSibling.firstElementChild.firstElementChild.classList.replace('text-green-300', 'text-white')
+
         }else if (article.dataset.disponibles < 5) {
             article.firstElementChild.textContent = '¡Ultimas unidades!'
         }
@@ -48,16 +50,18 @@ export function imprimirCarrito(arrCarrito, elemento) {
 
 export function crearTarjeta(artJuguetes) {
     return `
-    <article data-disponibles='${artJuguetes.disponibles}' class = 'flex flex-col w-[300px] bg-white rounded-xl p-3 gap-2'>
-        <span class='absolute bg-red-600 text-white px-1 rounded-lg'></span>
+    <article data-disponibles='${artJuguetes.disponibles}' class = ' bg-[#643392] shadow-2xl flex flex-col w-[300px] rounded-xl  gap-2'>
+        <span class='absolute bg-red-600 text-white px-1 rounded-lg ml-3'></span>
+        <div class='bg-white flex justify-center rounded-t-xl'>
         <img class = 'rounded-t-xl h-[200px] object-contain' src ='${artJuguetes.imagen}' alt = 'imagen de ${artJuguetes.producto}'>
-        <h3 class ='text-lg font-bold'>${artJuguetes.producto}</h3>
-        <div class ='flex justify-between'>
-            <p id = 'disponibles'>Unidades disponibles: <snap class = " text-green-600">${artJuguetes.disponibles} </snap></p>
-            <p>$ ${artJuguetes.precio}</p>
         </div>
-        <div class = 'flex justify-around pt-4'>
-            <a class ='p-1 bg-blue-500 self-start rounded-lg text-white' href='/PetShop_Grupo4/assets/pages/detalles.html?id=${artJuguetes._id}'>Mas detalles</a>
+        <h3 class =' mx-auto text-lg text-white font-bold'>${artJuguetes.producto}</h3>
+        <div class ='flex justify-around'>
+            <p class= 'text-white' id = 'disponibles'>Unidades disponibles: <snap class = " text-green-300">${artJuguetes.disponibles} </snap></p>
+            <p class= 'text-white'>$ ${artJuguetes.precio}</p>
+        </div>
+        <div class = 'flex justify-center gap-10 mx-auto pt-4 pb-4'>
+            <a class ='p-1 bg-blue-500 self-start rounded-lg text-white' href = './detalles.html?id=${artJuguetes._id}'>Mas detalles</a>
             <div>
             <button class = 'button' data-id ='${artJuguetes._id}' data-producto = '${artJuguetes.producto}' data-precio= '${artJuguetes.precio}' data-imagen = '${artJuguetes.imagen}'>
                 <i class="p-2 bg-slate-400 rounded-lg fa-solid fa-cart-shopping"></i>

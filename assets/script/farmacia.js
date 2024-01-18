@@ -23,7 +23,9 @@ fetch('https://moviestack.onrender.com/api/petshop')
             const producto = articulosFarmacia.filter(articulo => articulo.producto.toLowerCase().includes(valorBusqueda.toLowerCase()))
             carrito = JSON.parse(localStorage.getItem('carrito'))
             pintarTarjetas(producto, $farmacia, carrito)
-            producto.length == 0 ? $farmacia.innerHTML = '<p class= "text-xl fond-medium">No se encontro articulo ingresado. Intente de nuevo</p>': ''
+          
+            producto.length == 0 ? $farmacia.innerHTML = '<p class= "text-xl fond-medium px-3">No se encontro el articulo </p>': ''
+
         })
 
         $carrito.addEventListener('click', (e) => {

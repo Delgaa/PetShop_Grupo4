@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/PetShop_Grupo4/assets/style/style.css">
+    <link rel="shortcut icon" href="/PetShop_Grupo4/assets/images/cat-1484725_640 (1).ico" type="image/x-icon">
+    <title>PatitasShop | CONTACTO</title>
+</head>
+
+<body class="min-h-screen flex flex-col bg-[#E99224]">
+    <header class="bg-[url('/PetShop_Grupo4/assets/images/banner.jpg')] h-[200px] bg-no-repeat bg-cover bg-center">
+        <div class="flex items-center justify-around pt-[70px]" id="div-logo">
+            <div class="flex justify-start">
+                <img class=" w-[60px] object-contain mb-20" src="/PetShop_Grupo4/assets/images/logo.png" id="img-logo"
+                    alt="logo-PetShop">
+                <h1 class="text-white text-4xl italic mb-20"><span class="text-[#E99224]">Patitas</span>Shop</h1>
+            </div>
+            <nav class="text-white text-xl">
+                <a class="text-xl text-white font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow"
+                    href="./index.html">Inicio</a>
+                <a class="text-xl text-white font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow"
+                    class="underline" href="./farmacia.html">Farmacia</a>
+                <a class="text-xl text-white font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow"
+                    href="./juguetes.html">Juguetes</a>
+                <a class="text-xl text-[#E99224] font-semibold hover:text-[#E99224] duration-300 border-b border-transparent hover:border-white text-shadow"
+                    href="#">Contacto</a>
+            </nav>
+        </div>
+        <h1 class="text-white text-3xl text-center">PETSHOP | CONTACTO</h1>
+    </header>
+    <main class="p-5">
+        <section class="flex flex-col items-center gap-5 pb-5">
+            <h2 class="text-center text-3xl pt-5">Contáctanos!!!</h2>
+            <label class="font font-semibold">Nombre:
+                <input class="h-10 border border-black shadow-lg shadow-indigo-500/40 rounded-lg " type="text"
+                    id="nombre" name="nombre" placeholder="Ingrese su Nombre">
+            </label>
+            <label class="font font-semibold">Apellido:
+                <input class="h-10 border border-black shadow-lg shadow-indigo-500/40 rounded-lg " type="text"
+                    id="apellido" name="apellido" placeholder="Ingrese su Apellido">
+            </label>
+            <label class="font font-semibold">Teléfono:
+                <input class="h-10 border border-black shadow-lg shadow-indigo-500/40 rounded-lg " type="text"
+                    id="telefono" name="telefono" placeholder="Ingrese su Número de Teléfono">
+            </label>
+            <label class="font font-semibold">Seleccione su mascota:
+                <select class="h-10 shadow-lg shadow-indigo-500/40 rounded-lg " name="Mascota" id="mascota">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Ave">Loro</option>
+                    <option value="Conejo">Conejo</option>
+                    <option value="Tortuga">Tortuga</option>
+                    <option value="Loro">Loro</option>
+                    <option value="Aves">Aves</option>
+                </select>
+            </label>
+            <label for="comentario">
+                <textarea class="border border-black shadow-lg shadow-indigo-500/40 rounded-lg" name="comentario"
+                    id="comentario" cols="30" rows="10" placeholder="Déjenos un comentario..."></textarea>
+            </label>
+            <input class="border border-white bg-black text-white shadow-lg shadow-indigo-500/40 rounded-lg p-2 text-xl"
+                type="submit" id="buttonEnviar" name="Enviar">
+
+        </section>
+        <div class="flex flex-col items-center pt-5 pb-5">
+            <p class="font-semibold pb-5">También podés acercarte a nuestro Local. Nos
+                encontramos en la calle Paraguay al 2334 piso 5F </p>
+            <iframe class="rounded-lg pb-5 shadow-lg shadow-indigo-500/40 border border-black"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5030.670395069841!2d-58.40499123673225!3d-34.598184338307355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9158e82c41%3A0xafb5fe117a2c5a52!2sParaguay%202334%2C%20C1121ABL%20CABA!5e0!3m2!1ses!2sar!4v1705529709153!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white flex justify-center items-center h-10">
+        <p>MinHub - Cohort 53 - Grupo 4</p>
+    </footer>
+
+    <script src="/PetShop_Grupo4/contacto.js"></script>
+</body>
+
+</html>
