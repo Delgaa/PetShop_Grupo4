@@ -1,0 +1,67 @@
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        width: 100%;
+    }
+
+    h1.text-4xl {
+        font-size: 2.5rem;
+    }
+
+    #img-logo {
+        width: 40px;
+    }
+
+    #div-logo {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 426px) {
+    label {
+        width: 70%;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    textarea {
+        width: 70%;
+    }
+
+    select {
+        width: 30%;
+    }
+
+    input[type="submit"] {
+        width: 20%;
+    }
+
+}
+
+iframe {
+    width: 70%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
